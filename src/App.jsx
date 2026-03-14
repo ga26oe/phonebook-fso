@@ -11,14 +11,14 @@ const App = (props) => {
       id: newName,
     };
 
-    const repeat = props.numbers.find((name) => name === setNewName)
+    const repeat = numbers.some((e) => (e.name === newName));
 
     if (!repeat) {
-    setNumbers(numbers.concat(personObject));
-    setNewName("");
-    console.log("button clicked", event.target);
-    } else {
-      alert(`${newName} has already been added.`)
+      setNumbers(numbers.concat(personObject));
+      setNewName("");
+      console.log("button clicked", event.target);
+    } else if (repeat) {
+      alert(`${newName} has already been added.`);
     }
   };
 
@@ -46,7 +46,6 @@ const App = (props) => {
       </div>
 
       <div>debug: {newName}</div>
-      
     </div>
   );
 };

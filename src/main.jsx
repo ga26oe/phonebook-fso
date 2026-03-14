@@ -13,6 +13,7 @@ const numbers = [
     id: 2,
     name: 'Alex Honnold',
   }
+  
 
 ]
 
