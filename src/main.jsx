@@ -14,8 +14,17 @@ const persons = [
     id: 2,
     name: 'Alex Honnold',
     number: '123-512345'
-  }
-  
+  },
+  {
+    id: 3,
+    name: 'Sonny Hayes',
+    number: '123-43214'
+  },  
+  {
+    id: 4,
+    name: 'Max Verstappen',
+    number: '841-123945'
+  },  
 
 ]
 
