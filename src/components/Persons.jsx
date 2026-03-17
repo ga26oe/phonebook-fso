@@ -2,12 +2,10 @@ const Persons = ({ persons, filter }) => {
   return filter === "" ? (
     <ul>
       {persons.map((person) => (
-        <div>
-          <li key={person.id}>
-            {person.name + " "}
-            {person.number}
-          </li>
-        </div>
+        <li key={person.id}>
+          {person.name + " "}
+          {person.number}
+        </li>
       ))}
     </ul>
   ) : (
